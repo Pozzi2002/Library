@@ -1,11 +1,78 @@
+* {
+    font-family: "Lato";
+    font-size: 15px;
+    margin: 0;
+}
+.layout {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+/*header*/
+.Header {
+    background-color: rgb(214, 219, 221);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+}
+.Header h2{
+    font-style: italic;
+    font-size: 23px;
+    letter-spacing: 1px;
+    color:rgb(44, 43, 43)
+}
+.Header svg{
+    height: 45px;
+    fill: rgb(44, 43, 43);
+}
+.lib {
+ display: grid;
+ justify-items: center;
+ position: relative;
+ left: 50%;
+}
+#showModal {
+    background-color: rgb(233, 233, 233);
+    margin-left: auto;
+    margin-right:100px;
+    /* height: 30px; */
+    border-radius: 20px;
+    font-family: "Lato";
+    font-size: 18px;
+    padding: 6px;
+    letter-spacing: 1px;
+    border: 1px solid gray;
+    outline: none;
+    cursor: pointer;
+}
+#showModal:hover {
+    background-color: aliceblue;
+}
+#showModal:active {
+    background-color: rgb(187, 189, 190);
+}
+/*dialog*/
 dialog {
+    margin: auto;
     background-color: rgb(235, 225, 225);
     border-radius: 15px;
-    border: 1px solid gray
+    border: 1px solid gray;
 }
 .form {
-    display: grid;
     line-height: 1.5rem;
+}
+.grid {
+    display: grid;
+}
+.grid input{
+    border-radius: 10px;
+    padding: 5px;
+}
+.grid input:hover{
+    background-color: rgb(243, 243, 243);
+}
+.grid input:focus{
+    background-color: rgb(243, 243, 243);
 }
 .checkbox {
     display: flex;
@@ -13,4 +80,64 @@ dialog {
 p {
     margin: 0px;
     font-size: 15px;
+}
+#btn {
+    position: relative;
+    left: 40%;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 3px 12px 3px 12px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#btn:hover {
+    background-color: aliceblue;
+}
+#btn:active {
+    background-color: rgb(187, 189, 190);
+}
+/*Body*/
+.library {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.library div {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Images/book.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    padding-left: 50px;
+    padding-top: 30px;
+    height: 230px;
+    margin-left: 20px;
+}
+.library div input {
+    margin-left: 4px;
+    margin-top: 3px;
+   }
+.sex {
+    justify-content: center;
+}
+.library div button {
+ margin-top: 10px;
+ width: 110px;
+}
+.library div button {
+    font-family: "Grenze Gotisch";
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: 1px solid gray;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.library div button:hover {
+    background-color: aliceblue;
+}
+.library div button:active {
+    background-color: rgb(187, 189, 190);
 }

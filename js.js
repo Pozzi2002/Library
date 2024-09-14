@@ -52,8 +52,10 @@ function loop() {
     container.appendChild(oneBook)
 
     for(let book in myLibrary) {
-        oneBook.innerHTML = "<h3>Author:</h3>" + `<p>${myLibrary[book].author}</p>` +"<h3>Title:</h3>"+ `<p>${myLibrary[book].title}</p>` +"<h3>Number of pages:</h3>"+ `<p>${myLibrary[book].numberPages}</p>` + "<h3>Read/Unread:</h3>"
-        oneBook.appendChild(checkbox)
+        oneBook.innerHTML = "<h3>Author:</h3>" + `<p>${myLibrary[book].author}</p>` +"<h3>Title:</h3>"+ `<p>${myLibrary[book].title}</p>` +"<h3>Number of pages:</h3>"+ `<p>${myLibrary[book].numberPages}</p>` + "<span class='sex'><h3 style='display:inline'>Read/Unread:</h3>"
+        const span = document.querySelector(".sex")
+        span.appendChild(checkbox)
+        oneBook.innerHTML += "</span>"
         oneBook.appendChild(del)
     }
 //Button for delete book

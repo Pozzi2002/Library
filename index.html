@@ -5,27 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Library</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Grenze+Gotisch:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">  
     </head>
     <body>
-        <dialog>
-        <form class="form">
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="input">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="input">
-        <label for="numberPages">Number of pages:</label>
-        <input type="number" id="numberPages" name="input">
-        <div class="checkbox">
-        <label for="read">Read/Unread:</label>
-        <input type="checkbox" id="read">
-    </div>
-        <input type="button" value="button" id="btn">
+        <div class="layout">
+        <div class="Header">
+        <div class="lib">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
+            <h2>Library</h2>
+        </div>         
+<dialog>
+          <form class="form">
+            <div class="grid">
+              <label for="author">Author:</label>
+                <input type="text" id="author" name="input">
+               <label for="title">Title:</label>
+                <input type="text" id="title" name="input">
+               <label for="numberPages">Number of pages:</label>
+                <input type="number" id="numberPages" name="input">
+              <div class="checkbox">
+                <label for="read">Read/Unread:</label>
+                 <input type="checkbox" id="read">
+              </div>
+            </div>
+        <input type="button" value="Add" id="btn">
     </form>
 </dialog>
 <h2 id="allBook"></h2>
-<button id="showModal">Add a book</button>
-<div class="library">
-
+<button id="showModal">Add a book +</button>
+</div>
+<div class="body">
+<div class="library"></div>
+</div>
 </div>
         <script src="./js.js">
 
