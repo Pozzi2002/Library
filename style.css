@@ -1,0 +1,16 @@
+dialog {
+    background-color: rgb(235, 225, 225);
+    border-radius: 15px;
+    border: 1px solid gray
+}
+.form {
+    display: grid;
+    line-height: 1.5rem;
+}
+.checkbox {
+    display: flex;
+}
+p {
+    margin: 0px;
+    font-size: 15px;
+}
