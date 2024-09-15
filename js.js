@@ -25,7 +25,8 @@ function addBookToLibrary() {
 btn.addEventListener("click", (event) => {
     if (document.querySelector("#author").value != "" &&
     document.querySelector("#title").value != "" &&
-    document.querySelector("#numberPages").value != "") {
+    document.querySelector("#numberPages").value != "" &&
+    document.querySelector("#numberPages").value <= 99999) {
     event.preventDefault()
     addBookToLibrary()
     document.querySelector("#author").value = ""
@@ -35,7 +36,7 @@ btn.addEventListener("click", (event) => {
     dialog.close()
 }
   else {
-    alert("Fill all fields")
+    alert("Fill all fields/Max length numbers page 5 character")
   }
 })
 //Add book on the page
