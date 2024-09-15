@@ -38,8 +38,9 @@
     /* height: 30px; */
     border-radius: 20px;
     font-family: "Lato";
+    font-style: italic;
     font-size: 18px;
-    padding: 6px;
+    padding: 4px 8px 4px 8px;
     letter-spacing: 1px;
     border: 1px solid gray;
     outline: none;
@@ -101,7 +102,7 @@ p {
 /*Body*/
 .library {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .library div {
     display: flex;
@@ -140,4 +141,9 @@ p {
 }
 .library div button:active {
     background-color: rgb(187, 189, 190);
+}
+.library div input {
+    position: relative;
+    bottom: 18px;
+    left: 3px;
 }
