@@ -7,11 +7,14 @@ show.addEventListener("click", () => {
   dialog.showModal()
 })
 //book constructor
-function Book(author, title, numberPages, read) {
+  class Book {
+   
+    constructor(author, title, numberPages, read) {
    this.author = author;
    this.title = title;
    this.numberPages = numberPages;
    this.read = read; 
+  }
 }
 //Create book and share with constructor
 function addBookToLibrary() {
